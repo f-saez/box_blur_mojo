@@ -4,11 +4,12 @@ from pathlib import Path
 from time import now
 from collections import InlineList
 from algorithm import parallelize
+import validation
 
 import boxblur
 
 def benchmark():
-    var src = Image.from_ppm(Path("test/Octopus.ppm")) 
+    var src = Image.from_ppm(Path("validation/Octopus.ppm")) 
     var dst = Image.new(src.get_width(), src.get_height())
     var sigma = 14
     var tocs = List[Float64]()
@@ -46,8 +47,9 @@ def benchmark():
 
 
 def main():
-
-    var src = Image.from_ppm(Path("test/Octopus.ppm")) 
+    validation.validation()
+    
+    var src = Image.from_ppm(Path("validation/Octopus.ppm")) 
     var dst = Image.new(src.get_width(), src.get_height())
     var sigmas = InlineList[Int](2,4,8,16,24)
 
