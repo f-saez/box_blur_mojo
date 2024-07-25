@@ -2,8 +2,8 @@
 ## Box filtering approximation of Gaussian convolution
 
 The purpose of this filter is not to be a precise approximation of a Gaussian blur.
-Firstly, box filtering isn't really the best algorithm for this.
-Secondly, because the aim is simply to blur images. Nothing more than a visual blur.
+First, box filtering isn't really the best algorithm for this.
+Then because the aim is simply to blur images. Nothing more than a visual blur.
 
 Blur is usually achieved using a convolution kernel and, in general, if you want a blurrier image, you have to use a bigger kernel, which means a longer processing time.
 It is possible to use a smaller kernel and make multiple passes, but again, multiple passes lengthen processing time.
