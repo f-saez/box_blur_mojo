@@ -37,7 +37,7 @@ def main():
     _ = dst.to_ppm("multi_boxblur_"+str(sigma)+".ppm")
 ```
 
-I'm not sure I've done the multi-thread one in a clean "Mojoish" way, but it shouldn't explode in your face
+I'm not sure I've done the multi-thread one in a clean "Mojo-ish" way, but it shouldn't explode in your face
 
 It is not supposed to be used "as-is", but will be integrated in Blend2D soon.
 
