@@ -6,6 +6,8 @@ from math import sqrt
 from time import now
 from algorithm import parallelize
 
+# inspired by the work of Pascal Getreuer, http://dev.ipol.im/~getreuer/code/
+
 alias K:Int = 3 # do not touch :-)
 
 # deprecated, will be removed
